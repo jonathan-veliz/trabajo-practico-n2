@@ -162,6 +162,7 @@ let addMove=(pokemon,movimiento)=>{
 }
  let movimiento2 = "final attack";
 console.log("el nuevo movimiento de charmander es",addMove(charmander,movimiento2))
+console.log("no modificado conservalos movimientos originales",charmander.moves)
 
 /*removeMove()
 Crear una función removeMove que tome como argumentos un pokémon y un movimiento, elimine dicho movimiento de su lista y devuelva el pokémon con el movimiento agregado */
@@ -330,14 +331,5 @@ let battle =(pokemon1,pokemon2)=>{
   };
 };
 
+console.log("BATALLA",battle(charmander,bulbasaur))
 
-
-
-
-  
-  
-
-  
-
-console.log(battle(charmander,bulbasaur))
-console.log(battle(squirtle,pikachu))
